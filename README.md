@@ -1,4 +1,16 @@
 # pi-httpboot-uefi
-EEPROM with setting for http booting UEFI.
+EEPROM with setting for http booting UEFI. 
 
-install with rpi-eeprom-config --edit pieeprom.bin
+Boots into uefi from https if ethernet cable is inserted. normal sd/usb boot if there is no ethernet. 
+
+Install with `rpi-eeprom-config --edit pieeprom.bin`
+
+EEPROM contains this settings shown below and a signing key that matches boot.img and its signature.
+
+```
+[all]
+BOOT_ORDER=0xf417
+HTTP_HOST=github.com
+HTTP_PATH=/Marcinoo97/pi-httpboot-uefi/raw/master/UEFI-boot/pi5/
+NET_INSTALL_ENABLED=0
+```
