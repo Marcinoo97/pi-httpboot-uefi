@@ -3,7 +3,7 @@ EEPROM with setting for http booting UEFI.
 
 Boots into uefi from https if ethernet cable is inserted. normal sd/usb boot if there is no ethernet. 
 
-Install with `rpi-eeprom-config --edit pieeprom.bin`
+Install with `rpi-eeprom-config --edit signed-pieeprom.bin`
 
 EEPROM contains this settings shown below and a signing key that matches boot.img and its signature.
 
