@@ -1,5 +1,5 @@
 # pi-httpboot-uefi
-EEPROM with setting for http booting UEFI. 
+EEPROM (22-01-2024) with setting for http booting UEFI. 
 
 Boots into uefi from https if ethernet cable is inserted. normal sd/usb boot if there is no ethernet. 
 
